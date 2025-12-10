@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Pharmacy</title>
+    <title>Products - My Pharmacy</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
         header { background: #2a9d8f; color: white; padding: 20px; text-align: center; }
         nav { background: #264653; padding: 10px; text-align: center; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
         section { padding: 20px; }
+        .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .product { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
         footer { background: #264653; color: white; text-align: center; padding: 10px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Pharmacy</h1>
+    <h1>Our Products</h1>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
+    <a href="services.html">Services</a>
     <a href="products.html">Products</a>
     <a href="gallery.html">Gallery</a>
     <a href="order.html">Online Ordering</a>
@@ -27,8 +30,22 @@
 </nav>
 
 <section>
-    <h2>Home</h2>
-    <p>Welcome to our pharmacy website. We provide quality healthcare services and trusted medicines.</p>
+    <h2>Available Medicines & Essentials</h2>
+
+    <div class="product-grid">
+        <div class="product">
+            <h3>Paracetamol</h3>
+            <p>₱5 per tablet</p>
+        </div>
+        <div class="product">
+            <h3>Vitamin C</h3>
+            <p>₱150 per bottle</p>
+        </div>
+        <div class="product">
+            <h3>Alcohol 70%</h3>
+            <p>₱75 per bottle</p>
+        </div>
+    </div>
 </section>
 
 <footer>

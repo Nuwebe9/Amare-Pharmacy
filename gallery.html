@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Pharmacy</title>
+    <title>Gallery - My Pharmacy</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
         header { background: #2a9d8f; color: white; padding: 20px; text-align: center; }
         nav { background: #264653; padding: 10px; text-align: center; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
         section { padding: 20px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .gallery-grid img { width: 100%; border-radius: 8px; }
         footer { background: #264653; color: white; text-align: center; padding: 10px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Pharmacy</h1>
+    <h1>Gallery</h1>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
+    <a href="services.html">Services</a>
     <a href="products.html">Products</a>
     <a href="gallery.html">Gallery</a>
     <a href="order.html">Online Ordering</a>
@@ -27,8 +30,13 @@
 </nav>
 
 <section>
-    <h2>Home</h2>
-    <p>Welcome to our pharmacy website. We provide quality healthcare services and trusted medicines.</p>
+    <h2>Store Photos</h2>
+
+    <div class="gallery-grid">
+        <img src="https://via.placeholder.com/300" alt="Photo 1">
+        <img src="https://via.placeholder.com/300" alt="Photo 2">
+        <img src="https://via.placeholder.com/300" alt="Photo 3">
+    </div>
 </section>
 
 <footer>
